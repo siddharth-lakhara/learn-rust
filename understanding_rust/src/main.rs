@@ -21,6 +21,41 @@ fn main() {
     let arr2 = [3;5]; // [3,3,3,3,3];
 
     fn_example(20, 'y');
+
+    // 91
+    let expression_var = {
+        let x = 90;
+        x+1
+    }
+
+    // if statement
+    let condition = true;
+    if (condition) {
+        println!("Condition is true");
+    } else {
+        println!("Condition is false");
+    }
+
+    // loop
+    // label always starts with a single quote (')
+    'loop_label loop {
+        println!("Inside loop, breaking it now");
+        break 'loop_label;
+    }
+
+    // while loop
+    let mut count = 3;
+    while count != 0 {
+        println!("{count}!");
+        count -= 1;
+    }
+    println!("LIFTOFF!");
+
+    // for loop
+    let arr = [10, 20, 30, 40, 50];
+    for element in arr {
+        println!("the value is: {element}");
+    }
 }
 
 fn fn_example(x: i32, y: char) -> i32 {
